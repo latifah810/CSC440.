@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Second Page</title>
+	<link rel="stylesheet" href="FirstPage.html">
+
+</head>
+	<body>
+
+
+	Welcome <span id='myText'> </span> </p>
+	Our interests match <span id='persent'></span> %</p>
+		<script>
+		var persent = 0 ; 
+		document.getElementById('myText').innerHTML = localStorage.getItem('myText');
+		
+		
+		
+		persent +=  Number(localStorage.getItem('Astrology'));
+
+		persent +=  Number(localStorage.getItem('Make Up'));
+		
+		persent +=  Number(localStorage.getItem('Sports'));
+		
+		
+		persent +=  Number(localStorage.getItem('Travel'));
+		
+		
+		
+		document.getElementById('persent').innerHTML = persent;
+
+	</script>
+
+	
+	
+	
+	
+	
+</body>

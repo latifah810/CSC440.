@@ -1,0 +1,267 @@
+<html>
+
+<head>
+  <title>firstpage</title>
+  <script type="text/javascript">
+
+    function myFunction() {
+
+      const name = document.querySelector('#myText').value;
+      //const gender = document.querySelector('input[name="gender"]:checked').value;
+
+      localStorage.setItem('myText', name);
+      //localStorage.setItem('gender', gender);
+
+
+      if (document.getElementById('hb1').checked) {
+
+        localStorage.setItem('Astrology', 25);
+        //document.write('<a href="Spage.html"> see mathching </a>')
+      } else {
+        localStorage.setItem('Astrology', 0);
+        //document.write('<a href="Spage.html"> see mathching </a>')
+      }
+
+      if (document.getElementById('hb2').checked) {
+
+        localStorage.setItem('Make Up', 25);
+        //document.write('<a href="Spage.html"> see mathching </a>')
+      } else {
+        localStorage.setItem('Make Up', 0);
+        //document.write('<a href="Spage.html"> see mathching </a>')
+      }
+
+      if (document.getElementById('hb3').checked) {
+
+        localStorage.setItem('Sports', 25);
+        //document.write('<a href="Spage.html"> see mathching </a>')
+      } else {
+
+
+        localStorage.setItem('Sports', 0);
+        //document.write('<a href="Spage.html"> see mathching </a>')
+      }
+
+
+
+      if (document.getElementById('hb4').checked) {
+
+        localStorage.setItem('Travel', 25);
+        //document.write('<a href="Spage.html"> see mathching </a>')
+      } else {
+
+
+        localStorage.setItem('Travel', 0);
+        //document.write('<a href="Spage.html"> see mathching </a>')
+
+      }
+
+      if(document.getElementById('Lcv').checked)
+        document.write('<a href="Lcv.html"> Latifah CV</a>');
+
+      if (document.getElementById('Rcv').checked)
+        document.write('<a href="Rcv.html">Raghad CV</a>');
+
+      if (document.getElementById('s1').checked)
+        document.write('<a href="Spage.html">see our mathcing</a>');
+
+      if (document.getElementById('meme').checked)
+        document.write('<a href="memes.html">Memes</a>');
+
+
+
+
+
+
+      /* var len=document.querySelectorAll('input[type="checkbox"]:checked').length;
+       var count=0;
+
+       if (len==1)
+         count=25;
+      if(len==2)
+         count=50;
+      if(len==3)
+         count=75;
+       if(len==4)
+         count=100;
+
+       document.writeln("Our interest match "+count+"%");
+
+
+       var selected = new Array();
+       var chck=document.getElementsByName('hobbies');
+       var selectedItems="";
+       for(var i=0; i<chck.length; i++){
+         if(chck[i].type=='checkbox' && items[i].checked==true)
+           selectedItems+=chck[i].value+"\n";
+       }
+       document.writeln(selectedItems);
+
+
+       if(document.getElementById('cv').checked )
+
+         document.writeln("cv");
+
+       else  if(document.getElementById('meme').checked)
+         document.writeln("meme");*/
+
+    }
+/*
+    function getUserData() {
+      if(document.getElementById('Lcv').checked)
+        document.write('<a href="Lcv.html"> Latifah CV</a>');
+
+      else if (document.getElementById('Rcv').checked)
+        document.write('<a href="Rcv.html">Raghad CV</a>');
+      else if (document.getElementById('meme').checked)
+        document.write('<a href="memes.html">Memes</a>');
+
+
+      if ('localStorage' in window && window['localStorage'] !== null) {
+
+        const name = localStorage.getItem('myText');
+        const where = localStorage.getItem('where');
+        const hobbie = localStorage.getItem('hobbies');
+
+        var result = hobbie.split(",");
+        var percent = 0;
+        var length = result.length;
+
+        for (var i = 0 ; i < length ; ++i){
+          if (result[i] == 'Astrology')
+            percent+=25;
+
+          if (result[i] == 'Make Up')
+            percent+=25;
+
+          if (result[i] == 'Sports')
+            percent+=25;
+
+          if (result[i] == 'Travel')
+            percent+=25;
+        }
+
+        const node = document.createElement("p");
+        const br = document.createElement("br");
+        const textnode1 = document.createTextNode("Hello " + name);
+        const textnode2 = document.createTextNode ("our intrests match "+ percent +"% , I am also interested in " + hobbie);
+        node.appendChild(textnode1);
+        node.appendChild(br);
+        node.appendChild(textnode2);
+        document.querySelector("#result").appendChild(node);
+
+      } else {
+        alert('Cannot store user preferences as your browser do not support local storage');
+      }
+    }
+
+
+
+    function storeValues() {
+
+      if ('localStorage' in window && window['localStorage'] !== null) {
+        const name = document.querySelector('#name').value;
+        const where = document.querySelector('input[name="where"]:checked').value;
+        const hobbie = getSelectedCheckboxValues();
+
+        function getSelectedCheckboxValues() {
+          const checkboxes = document.querySelectorAll(`input[name="hobbies"]:checked`);
+          let values = [];
+          checkboxes.forEach((checkbox) => {
+            values.push(checkbox.value);
+          });
+          return values;
+        }
+
+        localStorage.setItem('name', name);
+        localStorage.setItem('where', where);
+        localStorage.setItem('hobbie', hobbie);
+
+      } else {
+        alert('Cannot store user preferences as your browser do not support local storage');
+      }
+    }
+
+
+    const submitBtn = document.querySelector('#sBtn');
+    submitBtn.addEventListener('click', storeValues);
+
+*/
+  </script>
+  <style>
+    body {
+      background-image: url('https://images5.alphacoders.com/895/895430.jpg');
+    }
+    h1{
+      font-family: "Lucida Console", Courier, monospace; ;
+      color:white;
+    }
+    .mySlides {display:none;}
+    p{
+
+      font-family: "Lucida Console", Courier, monospace; ;
+      color:white;
+    }
+    label{
+      font-family: "Raleway", sans-serif;;
+      color:white;
+    }
+    #content {
+      padding: 15px;
+      text-align: center;
+      border-radius: 40px;
+      border: 1px solid #d9d9d9;
+      width: 75%;
+      margin:auto;
+      opacity:80%;
+    }
+
+  </style>
+
+</head>
+<body style="text-align:center;">
+<h1>Hi Welcome To Our Website! </h1>
+
+
+<div id="content">
+  <form >
+    <label id="fname">Please Enter Your Name:</label><br>
+    <input type="text" id="myText" name="fname" value=""><br>
+    <br>
+
+    <label>What would you like to see?</label>
+    <br>
+    <input type="radio" id="Lcv"value="My CV" name="where" ><label>Latifah's CV</label>
+    <br>
+    <input type="radio" id="Rcv"value="Raghad CV" name="where" ><label>Raghad's CV</label>
+
+    <br>
+    <input type="radio" id="s1"value="see our mathcimng" name="where" ><label>see our mathcimng</label>
+
+    <br>
+    <input type="radio" id="meme" value="Memes"name="where"><label>Memes</label>
+    <br>
+    <br>
+    <label>Select your interests :</label>
+    <br>
+
+    <input type="checkbox" id="hb1"  value="Astrology" >
+    <label> Astrology</label><br>
+    <input type="checkbox" id="hb2" value="Make Up" >
+    <label > Make Up</label><br>
+    <input type="checkbox" id="hb3"  value="Sports" >
+    <label > Sports</label><br>
+    <input type="checkbox" id="hb4"  value="Travel" >
+    <label > Travel</label><br>
+    <br>
+    <br>
+    <input onclick="myFunction()" type="Submit" value="Submit">
+
+  </form>
+</div>
+<p id="par">
+
+</p>
+
+</body>
+</html>
